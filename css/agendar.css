@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+:root {
+  --main-color: #000;
+  --text-color: #ffffff;
+  --bg-color-01: #000;
+  --bg-color-02: rgb(52, 136, 147);
+  --color-00: #28353e;
+
+  /* extra */
+  --color-1: #000;
+  --color-2: #456789;
+  --color-3: #123476;
+  --color-4: #000000;
+  --color-5: #ff1515;
+  --color-6: #348893;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  font-size: large;
+  background-color: var(--bg-color-01);
+  color: var(--text-color);
+  text-align: center;
+}
+
+section {
+  min-height: 100vh;
+  padding: 4rem 4rem 2rem;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0.2rem 0.2rem 0.5rem #0a1719;
+}
+
+span {
+  color: var(--color-5);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Gabarito";
+}
+
+p {
+  font-family: "Gabarito";
+}
+
+/* header barbearia */
+/* Header */
+header.hero-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border-radius: 0 0 2rem 2rem;
+  border-bottom: solid 6px var(--color-6);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.griffe {
+  flex: 1;
+  text-align: left;
+}
+
+.griffe a {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logotipo {
+  padding-left: 18rem;
+  flex: 1.4;
+  text-align: center;
+  position: relative;
+}
+
+.logotipo img {
+  max-width: 100px;
+}
+
+.nav-menu {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-family: "Gabarito";
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  transition: color 0.3s;
+  padding: 1.3rem;
+}
+
+.nav-menu a:hover {
+  color: var(--color-6);
+}
+
+/* menu hamburguér */
+/* Menu Hamburguer */
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 3px;
+  background: #ffffff;
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Lista do menu lateral */
+.nav-list {
+  list-style: none;
+  display: none;
+  /* Inicialmente escondido */
+  flex-direction: column;
+  align-items: flex-end;
+  /* Alinhando para a direita */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 50%;
+  height: 130%;
+  background: rgb(52, 136, 147, 0.9);
+  /* Fundo semitransparente */
+  border-left: solid 6px var(--color-6);
+  border-bottom: solid 6px var(--color-6);
+  border-radius: 5%;
+  transition: transform 0.3s ease;
+  padding: 1rem;
+}
+
+.nav-list.active {
+  transform: translateX(0);
+  display: block;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  gap: 1rem;
+  transition: color 0.3s ease;
+  font-family: "Gabarito";
+}
+
+.nav-list a {
+  margin: 1rem;
+}
+
+.nav-list li a:hover {
+  color: var(--color-6);
+}
+
+/* Animação do menu hamburguer */
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* menu hamburguér */
+/* header barbearia */
+
+/* css agendamento */
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  font-family: "Poppins", "Segoe UI", Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url("../img/fundo_agenda.jpg") no-repeat center center / cover;
+  color: #333;
+  border-radius: 0 0 2rem 2rem;
+  border-bottom: solid 6px var(--color-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#bola {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 55%;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.agendar {
+  background-color: #348893;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 4%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.primei-h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+.form-select,
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.form-select:focus,
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #348893;
+  box-shadow: 0 0 10px rgba(52, 136, 147, 0.5);
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.button_agendar {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #348893;
+  padding: 12px 30px;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button_agendar:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+header {
+  color: #ff1515;
+}
+
+@media (max-width: 123900px) {
+  :root {
+    --grid-gutter-width: 40px;
+    --grid-column-width: calc((100vw - 520px) / 12);
+  }
+
+  .hero {
+    height: 100vh;
+    border-bottom: solid 6px var(--color-6);
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .service-box {
+    max-width: 500px;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .conteiner-service {
+    gap: 2rem;
+  }
+
+  .nav-responsive {
+    display: none;
+  }
+  .nav-list.active {
+    transform: translateX(0);
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  :root {
+    --grid-gutter-width: 24px;
+    --grid-column-width: calc((100vw - 312px) / 12);
+  }
+
+  .logotipo {
+    padding: 0 10rem 0 0;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-hamburguer {
+    display: block;
+  }
+
+  .conteiner-service {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .conteudo,
+  .retangulo,
+  .conteudo,
+  .quadrado-mapa {
+    flex-direction: column;
+    width: 500px;
+    height: 800px;
+  }
+
+  .nav-responsive {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+  .nav-list.active {
+    transform: translateX(0);
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --grid-gutter-width: 24px;
+    --grid-column-width: calc((100vw - 312px) / 12);
+  }
+
+  .logotipo {
+    padding: 0 10rem 0 0;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-hamburguer {
+    display: block;
+  }
+
+  .conteiner-service {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .conteudo,
+  .retangulo,
+  .conteudo,
+  .quadrado-mapa {
+    flex-direction: column;
+    width: 500px;
+    height: 800px;
+  }
+
+  .nav-responsive {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+    display: block;
+  }
+  #bola {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 578px) {
+  :root {
+    --grid-gutter-width: 24px;
+    --grid-column-width: calc((100vw - 312px) / 12);
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  .conteiner-service {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  section {
+    padding: 6rem 2.5rem;
+  }
+  .nav-responsive {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    height: 200%;
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+    display: block;
+  }
+
+  .serviços h1 {
+    padding: 0 0 10rem 0;
+  }
+  #bola {
+    width: 100%;
+    height: 60%;
+  }
+
+  .logotipo {
+    display: none;
+  }
+}
+
+@media (max-width: 0px) {
+  :root {
+    --grid-gutter-width: 24px;
+    --grid-column-width: calc((100vw - 312px) / 12);
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  #bola {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  .conteiner-service {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  section {
+    padding: 6rem 2.5rem;
+  }
+  .nav-responsive {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .logotipo {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    padding-bottom: 3rem;
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+    display: block;
+  }
+
+  .serviços h1 {
+    padding: 0 0 10rem 0;
+  }
+}
+
+/* Estilização Geral */

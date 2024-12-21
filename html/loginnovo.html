@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="shortcut icon" href="/img/logotipo.png   " type="image/x-icon" />
+    <!--site de icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--site de icons-->
+    <title>Login D'GRIFFE</title>
+  </head>
+  <body>
+    <div class="upper">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/img/logos .png" class="img-logo" />
+        </a>
+      </div>
+      <form class="login" action="/html/login.html" method="GET">
+        <h1>Crie sua conta!</h1>
+        <div class="input-text">
+          <input
+            type="text"
+            id="inputUser"
+            name="Usuario"
+            placeholder="Usuario"
+            required
+          />
+          <div class="warning-input" id="warningUser">Nome já sendo usado.</div>
+        </div>
+
+        <div class="input-text">
+          <input
+            type="email"
+            id="inputEmail"
+            name="Email"
+            placeholder="Email"
+            required
+          />
+          <div class="warning-input" id="warningEmail">
+            Bote um Email existente.
+          </div>
+        </div>
+
+        <div class="input-text">
+          <input
+            type="password"
+            id="inputSenha"
+            name="Senha"
+            placeholder="Senha"
+            required
+          />
+          <div class="warning-input" id="warningPassword">
+            Sua senha deve conter entre 4 a 60 letras.
+          </div>
+        </div>
+
+        <div class="input-text">
+          <input
+            type="password"
+            id="inputSenhaCong"
+            name="SenhaConf"
+            placeholder="Confirmação da senha"
+            required
+          />
+          <div class="warning-input" id="warningconf">
+            Não é igual a sua senha
+          </div>
+        </div>
+
+        <!-- Botão do tipo "submit" -->
+        <div>
+          <button type="submit" class="signin-button">Logar</button>
+        </div>
+
+        <div class="remember-flex">
+          <div>
+            <input type="checkbox" />
+            <label class="color_text">Lembrar-se</label>
+          </div>
+        </div>
+        <div class="login-face">
+          <i class="bx bxl-google"> Login com Google</i>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

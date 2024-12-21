@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>D'GRIFFE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="/img/logotipo.png   " type="image/x-icon">
+    <!--site de icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--site de icons-->
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/agendar.css'>
+
+</head>
+
+<body>
+    <!-- cabeçalhos -->
+    <!-- cabeçalhos -->
+    <header class="hero-header" id="home">
+        <div class="container-header">
+            <div class="griffe">
+                <a href="/index.html" class="letreiro">D<span>'</span>GRIFFE</a>
+            </div>
+            <div class="logotipo">
+             <a href="/index.html" class="letreiro"><img src="/img/logos .png" alt="logo tipo"></a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <a href="/index.html">Início</a>
+                    <a href="/index.html#serviços">Serviços</a>
+                    <a href="/html/produtos.html#trandings">Produtos</a>
+                    <a href="/index.html#localizacao">Localização</a>
+                    <a href="/html/login.html">Login</a>
+                </ul>
+            </div>
+
+            <!-- Menu Hamburguer para dispositivos móveis -->
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <!-- Menu Principal -->
+            <ul class="nav-list">
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/index.html#serviços">Serviços</a></li>
+                <li><a href="/html/produtos.html#tranding">Produtos</a></li>
+                <li><a href="/index.html#localizacao">Localização</a></li>
+                <li><a href="/html/login.html">Login</a></li>
+            </ul>
+        </div>
+
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="bola">
+        <div class="agendar">
+            <h1 class="primei-h1">Agendar Serviço</h1>
+            <form>
+                <label for="servico" class="form-label">Selecione o Serviço:</label>
+                <select id="servico" name="servico" class="form-select">
+                    <option value="Corte">Corte</option>
+                    <option value="Barba">Barba</option>
+                    <option value="Sobrancelha">Sobrancelha</option>
+                    <option value="Cortemaquina1P">Corte máquina 1P</option>
+                    <option value="CorteBarba">Corte + Barba</option>
+                    <option value="CorteSobrancelha">Corte + Sobrancelha</option>
+                    <option value="CorteSobrancelhabarba">Corte + Sobrancelha + barba</option>
+                    <option value="Acabamento">Acabamento</option>
+                    <option value="AcabamentoSobrancelha">Acabamento + sobrancelha</option>
+                    <option value="Acabamentobarba">Acabamento + barba</option>
+                    <option value="Acabamentobarbasobrancelha">Acabamento + barba + sobrancelha</option>
+                    <option value="CorteLuzes">Corte + Luzez</option>
+                    <option value="CorteGlobal">Corte + Global</option>
+                    <option value="BarbaSobrancelha">Barba + Sobrancelha</option>
+                </select>
+
+                <label for="data" class="form-label">Escolha a Data:</label>
+                <input type="date" id="data" name="data" class="form-input" placeholder="MM/DD" required />
+
+
+                <label for="hora" class="form-label">Escolha a Hora:</label>
+                <select id="hora" name="hora" class="form-select">
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:30">14:30</option>
+                    <option value="15:00">15:00</option>
+                    <option value="15:30">15:30</option>
+                    <option value="16:00">16:00</option>
+                    <option value="16:30">16:30</option>
+                    <option value="17:00">17:00</option>
+                    <option value="17:30">17:30</option>
+                    <option value="18:00">18:00</option>
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                </select>
+
+                <button type="submit" class="button_agendar" id="finaliza">Agendar</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    </div>
+    </section>
+
+    <footer>
+        <p> Copyright&copy; 2024 por &lt;Luis Gustavo & Luis Ronaldo&gt;. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src='/js/agenda.js'></script>
+</body>
+
+</html>

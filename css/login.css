@@ -1,0 +1,208 @@
+/* =========================== */
+/* FONTS & ROOT VARIABLES      */
+/* =========================== */
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+:root {
+  --main-color: #000;
+  --text-color: #ffffff;
+  --bg-color-dark: #000;
+  --bg-color-light: rgb(52, 136, 147);
+  --highlight-color: #ff1515;
+  --secondary-text-color: #757575;
+  --input-bg: #333;
+  --input-placeholder: #999;
+  --button-bg: #348893;
+  --button-hover: #2c6f76;
+  --border-color: #737373;
+  --footer-bg: #0a1719;
+}
+
+/* =========================== */
+/* GLOBAL RESET & BASE STYLES  */
+/* =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Gabarito", sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--bg-color-dark);
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* =========================== */
+/* HEADER                      */
+/* =========================== */
+.upper {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+}
+
+.img-logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+/* =========================== */
+/* LOGIN FORM                  */
+/* =========================== */
+.login {
+  margin: 3rem auto;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.login h1 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.input-text {
+  margin-bottom: 1.5rem;
+}
+
+.input-text input {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-radius: 5px;
+  text-indent: 10px;
+  font-size: 1rem;
+}
+
+.input-text input::placeholder {
+  color: var(--input-placeholder);
+}
+
+.warning-input {
+  display: none;
+  color: var(--highlight-color);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.signin-button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signin-button:hover {
+  background-color: var(--button-hover);
+}
+
+/* =========================== */
+/* EXTRA ELEMENTS              */
+/* =========================== */
+.remember-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.color_text {
+  color: var(--secondary-text-color);
+}
+
+.login-face {
+  margin: 2rem 0;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.login-face i {
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+/* =========================== */
+/* FOOTER                      */
+/* =========================== */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+  color: var(--secondary-text-color);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================== */
+/* MEDIA QUERIES               */
+/* =========================== */
+@media screen and (max-width: 768px) {
+  .login {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .signin-button {
+    font-size: 0.9rem;
+  }
+
+  .remember-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-logo {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .login h1 {
+    font-size: 1.5rem;
+  }
+
+  .signin-button {
+    padding: 10px;
+  }
+}
